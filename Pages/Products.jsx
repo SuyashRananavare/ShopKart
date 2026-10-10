@@ -14,6 +14,8 @@ export default function Products() {
         <div style={{ display: "flex", flexWrap: "wrap" }}>
             {products.map(prod => (
                 <ProductCard
+                    key={prod.id}
+                    id={prod.id}
                     title = {prod.title}
                     price = {prod.price}
                     image = {prod.image}
